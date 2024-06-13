@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Open MF Account</title>
+</head>
+<body>
+    <h2>Open MF Account</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Open Account</button>
+    </form>
+</body>
+</html>

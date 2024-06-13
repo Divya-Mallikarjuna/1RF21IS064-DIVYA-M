@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Open Savings Account</title>
+</head>
+<body>
+    <h2>Open Savings Account</h2>
+    <form method="post">
+        {% csrf_token %}
+        <label for="customer_id">Customer ID:</label>
+        <input type="text" id="customer_id" name="customer_id" value="{{ customer_id }}" readonly><br>
+        <label for="initial_amount">Initial Amount:</label>
+        <input type="number" id="initial_amount" name="initial_amount"><br>
+        <button type="submit">Open Account</button>
+    </form>
+</body>
+</html>

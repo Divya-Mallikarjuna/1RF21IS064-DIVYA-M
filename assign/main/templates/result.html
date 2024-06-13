@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Conversion Result</title>
+</head>
+<body>
+    <h2>Amount: Rs. {{ amount }}</h2>
+    <h3>In Words: {{ words }}</h3>
+    <a href="{% url 'print_cheque' %}?amount={{ amount }}&words={{ words }}">Print Cheque</a>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Products Page</title>
+</head>
+<body>
+    <h2>Welcome, {{ customer_id }}</h2>
+    <ul>
+        <li><a href="{% url 'open_savings_account' customer_id=customer_id %}">Open Savings Account</a></li>
+        <li><a href="{% url 'open_mf_account' customer_id=customer_id %}">Open MF Account</a></li>
+        <li><a href="{% url 'open_loan_account' customer_id=customer_id %}">Open Loan Account</a></li>
+    </ul>
+</body>
+</html>
